@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 32px;
+    
+}
+
+body{
+    background-color: #FBFFFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    top: 0;
+    z-index: 1000;
+}
+
+header:hover{
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+header nav a{
+    color: #000;
+    text-align: center;
+    font-family: Zain;
+    font-size: 20px;
+    font-weight: 200;
+    transition: all 0.3s ease-in-out;
+
+}
+
+header nav a:hover{
+    color: #475356;
+    text-decoration: underline;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 120px;
+    background-image: url('../assets/img/banner.png');
+    background-size: cover;
+    width: 90%;
+    height: 55vh;
+    border-radius: 20px;
+    color: white;
+    padding: 70px;
+    filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.15)) drop-shadow(0px 17px 17px rgba(0, 0, 0, 0.13)) drop-shadow(0px 37px 22px rgba(0, 0, 0, 0.08)) drop-shadow(0px 66px 27px rgba(0, 0, 0, 0.02)) drop-shadow(0px 104px 29px rgba(0, 0, 0, 0.00));
+}
+
+.banner p{
+    text-align: justify;
+    font-family: Zain;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 96%; /* 19.2px */
+    letter-spacing: 1px;
+    display: flex;
+    width: 227px;
+    height: 76px;
+
+}
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.titulo h2:first-child {
+    text-align: center;
+    font-family: Zain;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -3.2px;
+
+    background: linear-gradient(276deg, #475356 37.03%, #1E3041 181.78%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titulo h2:last-child {
+    text-align: center;
+    font-family: Charm;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    background: linear-gradient(92deg, #475356 11.25%, #9BBCA8 139.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
