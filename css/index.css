@@ -408,6 +408,7 @@ a button:hover{
     height: 60vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 2rem;
     gap: 1rem;
     border-radius: 10px;
@@ -622,3 +623,248 @@ footer .baixo div:last-child{
     flex-direction: row;
     gap: 0.5rem;
 }
+
+@media only screen and (max-width: 767px) {
+    header{
+        width: 100%;
+        justify-content: center;
+        
+    }
+
+    header nav{
+        display: none;
+    }
+
+    .banner{
+        align-items: center;
+        gap: 2rem;
+
+    }
+
+    .banner p{
+        width: 15rem;
+        height: 100%;
+        text-align: justify;
+    }
+
+    #quem-somos div.titulo{
+        align-self: center;
+    }
+
+    .titulo h2:first-child{
+        font-size: 2.5rem;
+        width: 5rem;
+    }
+
+    .titulo h2:last-child{
+        font-size: 4rem;
+    }
+
+    #quem-somos article picture{
+        height: 20vh;
+        width: 30vh;
+    }
+
+    #quem-somos article{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    #quem-somos article p{
+        width: 40vh;
+
+    }
+
+    #projetos div.titulo h2:first-child{
+        width: 5rem;
+    }
+
+    #projetos div.titulo{
+        align-self: center;
+    }
+
+    #projetos .container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width: 90%; 
+        gap: 1.5rem;
+    }
+
+    #projetos .container div{
+        border-radius: 20px;
+    }
+
+    .img-1{
+        width: 20vh;
+        height: 25vh;
+        grid-column: 2/4;
+        grid-row: 1;
+    }
+
+    .img-2{
+        grid-column: 3;
+        grid-row: 2;
+
+    }
+
+    .img-3{
+        grid-column: 2/4;
+        grid-row: 3;
+    }
+
+    .img-4{
+        grid-column: 3;
+        grid-row: 4;
+    }
+
+    .img-5{
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+
+    .img-6{
+        grid-column: 1;
+        grid-row: 3/5;
+    }
+
+    a button{
+        width: 25vh;
+    }
+
+    #servicos div.titulo{
+        align-self: center;
+    }
+
+    #servicos div.titulo h2:first-child{
+        align-self: center;
+        width: 5.2rem;
+    }
+
+    .servico{
+        width: 40vh;
+        font-size: 1.7rem;
+        padding: 1rem;
+    }
+
+    #depoimentos div.titulo{
+        align-self: center;
+        gap: 0.5rem;
+    }
+
+    #depoimentos div.titulo h2:first-child{
+        width: 3.5rem;
+    }
+
+    #depoimentos .container{
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    #depoimentos .container .card{
+        width: 80vw;
+        height: 50vh;
+        padding: 1.5rem;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    #depoimentos .container .card .icons{
+        align-items: center;
+        gap: 1.25rem;
+    }
+
+    #depoimentos .container h3{
+        width: 80%;
+    }
+
+    #depoimentos .container p{
+        font-size: 1.25rem;
+    }
+
+    #contato div.titulo{
+        margin-top: 2.5rem;
+        align-self: center;
+        
+    }
+
+    #contato div.titulo h2:first-child{
+        width: 7rem;
+
+    }
+
+    #contato .container{
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        padding: 2.5rem;
+    }
+
+
+    #contato .container aside:last-child{
+        align-items: center;
+        width: 100%;
+
+    }
+
+
+    #contato .container aside:last-child p{
+        width: 80vw;
+        text-align: center;
+
+    }
+
+    #contato .container aside{
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+        height: 100%;
+    }
+
+    footer div > img{
+        width: 50%;
+    }
+
+    footer svg{
+        width: 90%;
+    }
+
+    footer > div .imagem-fundo img{
+        margin-top: 6.5rem;
+    }
+
+    footer div.cima{
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer div.cima img{
+        width: 50%;
+
+    }
+
+    footer .cima aside:first-of-type{
+    width: 60vw;
+
+    }
+
+    footer .baixo div:first-of-type{
+        gap: 1rem;
+    }
+
+    footer .baixo img{
+        width: 1.5rem;
+    }
+
+    footer .baixo p{
+        font-size: 0.7rem;
+    }
+
+}
+
+
