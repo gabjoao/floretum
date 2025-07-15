@@ -240,6 +240,10 @@ section div.titulo h2:last-child {
   padding: 1rem;
   border-radius: 20px;
   background: #FFF;
+  background-image: url("../assets/img/logos/logo-solo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   box-shadow: 0px 153px 43px 0px rgba(0, 0, 0, 0.00), 0px 98px 39px 0px rgba(0, 0, 0, 0.01), 0px 55px 33px 0px rgba(0, 0, 0, 0.03), 0px 24px 24px 0px rgba(0, 0, 0, 0.04), 0px 6px 13px 0px rgba(0, 0, 0, 0.05);
 }
 
