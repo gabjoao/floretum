@@ -1,0 +1,431 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 32px;
+    
+}
+
+body{
+    background-color: #FBFFFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    top: 0;
+    z-index: 1000;
+}
+
+header:hover{
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+header nav a, header nav a:visited{
+    color: #000;
+    text-align: center;
+    font-family: Zain;
+    font-size: 1.25rem;
+    font-weight: 200;
+    transition: all 0.3s ease-in-out;
+
+}
+
+header nav a:hover{
+    color: #475356;
+    text-decoration: underline;
+}
+
+
+section div.titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+section div.titulo h2:first-child {
+    text-align: center;
+    font-family: Zain;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -3.2px;
+    width: 10rem;
+    background: linear-gradient(276deg, #475356 37.03%, #1E3041 181.78%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section div.titulo h2:last-child {
+    text-align: center;
+    font-family: Charm;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(92deg, #475356 11.25%, #9BBCA8 139.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#intro{
+    margin-top: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+#intro > aside{
+  display: flex;
+  flex-direction: row;
+}
+
+#intro p{
+  font-family: Zain;
+  color: #1E3041;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 40vw;
+}
+
+#intro aside:last-child{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+#intro aside:last-child div{
+  width: 20vw;
+  height: 30vh;
+  border-radius: 20px;
+  background-color: red;
+  background-image: url('../assets/img/serv-2.png');
+  background-position: center;
+  
+}
+
+#intro h4{
+  color: #1E3041;
+  font-family: Zain;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.88px;
+}
+
+#intro a:visited{
+    color: #1E3041;
+}
+
+
+.projeto{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.projeto div.titulo-projeto{
+  background-image: url("../assets/img/logos/projeto-fundo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50vw;
+  padding: 1rem;
+}
+
+.projeto.a div.titulo-projeto{
+  align-self: flex-start;
+}
+
+.projeto.b div.titulo-projeto{
+   align-self: flex-end;
+    background-image: url("../assets/img/logos/projeto-fundo-2.svg");
+}
+
+.projeto div.titulo-projeto h3{
+  color: #FFF;
+  text-shadow: 0px 15px 4px rgba(0, 0, 0, 0.00), 0px 9px 4px rgba(0, 0, 0, 0.01), 0px 5px 3px rgba(0, 0, 0, 0.05), 0px 2px 2px rgba(0, 0, 0, 0.09), 0px 1px 1px rgba(0, 0, 0, 0.10);
+  font-family: Zain;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.projeto .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 26px 7px 0px rgba(0, 0, 0, 0.00), 0px 17px 7px 0px rgba(0, 0, 0, 0.01), 0px 9px 6px 0px rgba(0, 0, 0, 0.05), 0px 4px 4px 0px rgba(0, 0, 0, 0.09), 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
+}
+
+.projeto aside:first-child{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.projeto aside:first-child figure{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.projeto aside:first-child figure figcaption{
+  color: #1E3041;
+  text-align: center;
+  font-family: Charm;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.projeto aside:first-child figure div{
+  width: 30vw;
+  height: 60vh;
+  border-radius: 20px;
+  background-color: gray;
+}
+
+.projeto.p1 aside:first-child figure:first-child div{
+    background-image: url("../assets/img/proj-11.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.projeto.p1 aside:first-child figure:last-child div{
+    background-image: url("../assets/img/proj-12.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.projeto.p2 aside:first-child figure:first-child div{
+    background-image: url("../assets/img/proj-21.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.projeto.p2 aside:first-child figure:last-child div{
+    background-image: url("../assets/img/proj-22.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.projeto.p3 aside:first-child figure:first-child div{
+    background-image: url("../assets/img/proj-31.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.projeto.p3 aside:first-child figure:last-child div{
+    background-image: url("../assets/img/proj-32.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.projeto.p4 aside:first-child figure:first-child div{
+    background-image: url("../assets/img/proj-41.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.projeto.p4 aside:first-child figure:last-child div{
+    background-image: url("../assets/img/proj-42.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+.projeto aside:last-child{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.projeto aside:last-child article div{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.projeto aside:last-child article{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+  color: #485457;
+  font-family: Zain;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+}
+
+.projeto ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.projeto li{
+   list-style: inside; 
+}
+
+footer{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 95vw;
+    height: 70vh;
+    margin-bottom: 1rem;
+}
+
+footer div > img{
+    position: absolute;
+    align-self: center;
+
+}
+
+footer > div{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #193533 0%, #060212 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+footer > div .imagem-fundo{
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer > div .imagem-fundo img{
+    margin-top: 15rem;
+}
+
+footer div.cima{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+footer .cima aside:first-of-type{
+    width: 20vw;
+    color: #FFF;
+    font-family: Zain;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+footer .cima aside:last-of-type{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    color: #FFF;
+    font-family: Zain;
+    font-size: 1.25rem;
+    font-style: normal;
+    line-height: normal;
+}
+
+footer a, a:visited{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 300;
+    transition: all;
+    transition-duration: 350ms;
+    transition-delay: 150ms;
+}
+
+footer a:hover{
+    scale: 110%;
+}
+
+footer .baixo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #B1B1B1;
+    font-family: Zain;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+footer .baixo div:first-of-type{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+footer .baixo div:last-child{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
